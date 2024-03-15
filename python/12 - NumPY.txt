@@ -1,0 +1,60 @@
+Demonstrate NumPY library – Array Operations, Mathematical Functions, Sort, Search and Counting Functions. 
+
+import numpy as np
+
+# Creating arrays
+arr1 = np.array([1, 2, 3, 4, 5])
+arr2 = np.array([6, 7, 8, 9, 10])
+
+# Array Operations
+print("Array Operations:")
+print("Array 1:", arr1)
+print("Array 2:", arr2)
+print("Sum:", np.sum(arr1))              # Sum of array elements
+print("Mean:", np.mean(arr1))            # Mean of array elements
+print("Max:", np.max(arr1))              # Maximum value in the array
+print("Min:", np.min(arr1))              # Minimum value in the array
+print("Dot Product:", np.dot(arr1, arr2))# Dot product of two arrays
+print()
+
+# Mathematical Functions
+print("Mathematical Functions:")
+arr3 = np.array([1, 4, 9, 16, 25])
+print("Square root of arr3:", np.sqrt(arr3))   # Square root of array elements
+print("Exponential of arr1:", np.exp(arr1))    # Exponential of array elements
+print("Sine of arr1:", np.sin(arr1))           # Sine of array elements
+print()
+
+
+
+
+
+
+# Sorting
+print("Sorting:")
+arr4 = np.array([3, 1, 4, 1, 5, 9, 2, 6, 5])
+print("Unsorted array:", arr4)
+arr4_sorted = np.sort(arr4)             # Sort array
+print("Sorted array:", arr4_sorted)
+print()
+
+# Searching
+print("Searching:")
+arr5 = np.array([2, 4, 6, 8, 10])
+print("Array:", arr5)
+index = np.where(arr5 == 6)             # Find index where value is 6
+print("Index of 6:", index[0])
+print()
+
+# Counting
+print("Counting:")
+arr6 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5])
+print("Array:", arr6)
+count_unique = np.unique(arr6)          # Count unique elements
+print("Unique elements:", count_unique)
+print("Count of each unique element:")
+for unique_val in count_unique:
+    count = np.count_nonzero(arr6 == unique_val)  # Count occurrences of each unique element
+    print(unique_val, ":", count)
+
+

@@ -1,0 +1,44 @@
+Base Case Check:
+
+if len(arr) <= 1:
+    return arr
+
+The function starts by checking if the length of the array arr is less than or equal to 1. If arr has 1 or fewer elements, it is already sorted, so the function returns the array as is.
+
+Selecting a Pivot:
+
+pivot = arr[len(arr) // 2]
+
+The pivot element is chosen. In this implementation, the pivot is selected as the element at the middle index of the array.
+
+
+Partitioning the Array:
+
+
+left = [x for x in arr if x < pivot]
+middle = [x for x in arr if x == pivot]
+right = [x for x in arr if x > pivot]
+
+
+The array is partitioned into three subarrays:
+
+left: containing elements less than the pivot.
+middle: containing elements equal to the pivot.
+right: containing elements greater than the pivot.
+
+Recursion:
+
+
+return quick_sort(left) + middle + quick_sort(right)
+
+
+The function recursively calls itself on the left and right subarrays, sorting them.
+
+
+Combining Results:
+
+Finally, the sorted left, middle, and right subarrays are concatenated together and returned as the sorted array.
+
+
+
+This process of recursively partitioning the array and sorting the subarrays continues until the base case is met (when the array has only one element or is empty). The quicksort algorithm is a popular sorting algorithm known for its efficiency, especially on large datasets. However, its performance can degrade in the worst-case scenario, such as when the array is already sorted.

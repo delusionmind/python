@@ -1,0 +1,32 @@
+Initialization:
+n = len(arr) calculates the length of the input array arr.
+
+for i in range(n): iterates n times, where i represents the current pass number through the array.
+
+
+Inner Loop:
+for j in range(0, n-i-1): iterates from index 0 to n-i-1.
+
+During each pass, the inner loop iterates through the unsorted portion of the array.
+
+
+
+Comparison and Swapping:
+if arr[j] > arr[j+1]: 
+
+compares the current element (arr[j]) with its adjacent element (arr[j+1]).
+If the current element is greater than the adjacent element, it means they are in the wrong order.
+In such a case, arr[j] and arr[j+1] are swapped using simultaneous assignment: arr[j], arr[j+1] = arr[j+1], arr[j].
+
+
+Iteration:
+The inner loop continues to iterate through the array, comparing and swapping adjacent elements until the end of the unsorted portion of the array is reached.
+Repeat:
+
+After completing one iteration of the inner loop, the outer loop continues to the next pass (i += 1) through the array.
+The process repeats until no more swaps are needed, indicating that the array is sorted.
+
+
+Final Result:
+
+Once the outer loop completes all n passes through the array, the array is sorted in ascending order.

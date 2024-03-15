@@ -1,0 +1,105 @@
+1 - Demonstrate the working of all kinds of operators.
+
+Arithmetic Operators:
+Addition (+)
+Subtraction (-)
+Multiplication (*)
+Division (/)
+Modulus (%)
+Exponentiation (**)
+
+
+a = 10
+b = 3
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+print("Modulus:", a % b)
+print("Exponentiation:", a ** b)
+
+
+
+
+Comparison Operators:
+Equal to (==)
+Not equal to (!=)
+Greater than (>)
+Less than (<)
+Greater than or equal to (>=)
+Less than or equal to (<=)
+
+
+x = 5
+y = 10
+
+print("Equal to:", x == y)
+print("Not equal to:", x != y)
+print("Greater than:", x > y)
+print("Less than:", x < y)
+print("Greater than or equal to:", x >= y)
+print("Less than or equal to:", x <= y)
+
+
+Logical Operators:
+Logical AND (and)
+Logical OR (or)
+Logical NOT (not)
+
+p = True
+q = False
+
+print("Logical AND:", p and q)
+print("Logical OR:", p or q)
+print("Logical NOT:", not p)
+
+
+
+Assignment Operators:
+Assignment (=)
+Addition assignment (+=)
+Subtraction assignment (-=)
+Multiplication assignment (*=)
+Division assignment (/=)
+
+
+x = 5
+
+x += 3  # Equivalent to x = x + 3
+print("Addition assignment:", x)
+
+x -= 2  # Equivalent to x = x - 2
+print("Subtraction assignment:", x)
+
+x *= 4  # Equivalent to x = x * 4
+print("Multiplication assignment:", x)
+
+x /= 2  # Equivalent to x = x / 2
+print("Division assignment:", x)
+
+
+
+Bitwise Operators:
+Bitwise AND (&)
+Bitwise OR (|)
+Bitwise XOR (^)
+Bitwise NOT (~)
+Left shift (<<)
+Right shift (>>)
+
+
+
+a = 10  # Binary: 1010
+b = 5   # Binary: 0101
+
+print("Bitwise AND:", a & b)  # Result: 0000
+print("Bitwise OR:", a | b)   # Result: 1111
+print("Bitwise XOR:", a ^ b)  # Result: 1111
+print("Bitwise NOT of a:", ~a)  # Result: -11
+print("Left shift of a by 1:", a << 1)  # Result: 10100
+print("Right shift of a by 1:", a >> 1)  # Result: 0101
+
+
+
+

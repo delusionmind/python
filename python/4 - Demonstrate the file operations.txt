@@ -1,0 +1,67 @@
+4 - Demonstrate the file operations in python
+
+
+
+#Read the entire file
+
+import os
+file = open("C:\pdapython\operations1.txt", "r")
+print(file.read())
+file.close()
+
+
+#Read the first 7 characters of my file
+
+
+import os
+file = open("C:\pdapython\operations1.txt", "r")
+print(file.read(7))
+file.close()
+
+
+#Read line by line
+
+
+import os
+file = open("C:\pdapython\operations1.txt", "r")
+print(file.readline())
+file.close()
+
+
+#Read line by line all lines
+
+
+import os
+file = open("C:\pdapython\operations1.txt", "r")
+print(file.readlines())
+file.close()
+
+
+
+Write function
+
+#overwrite it with new content
+
+import os
+file = open("C:\pdapython\operations2.txt", "w")
+file.write("Sunday")
+file.write("Monday")
+file.close()
+
+
+
+#Remove a  file
+
+
+import os
+os.remove("C:\pdapython\operations4.txt")
+
+
+
+
+#create a file
+
+import os
+file = open("C:\pdapython\operations6.txt", "x")
+file.write("sunshine")
+file.close()

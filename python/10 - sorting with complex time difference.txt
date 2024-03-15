@@ -1,0 +1,77 @@
+Demonstrate creation and use of Functions in python with all kinds of “parameters” used  with functions
+
+
+
+import time
+import random
+
+# Bubble Sort
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+# Merge Sort
+def merge_sort(arr):
+    if len(arr) > 1:
+        mid = len(arr) // 2
+        L = arr[:mid]
+        R = arr[mid:]
+
+        merge_sort(L)
+        merge_sort(R)
+
+        i = j = k = 0
+
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i]
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
+
+        while i < len(L):
+            arr[k] = L[i]
+            i += 1
+            k += 1
+
+        while j < len(R):
+            arr[k] = R[j]
+            j += 1
+            k += 1
+
+# Quick Sort
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+# Generate a random list of numbers
+random_list = random.sample(range(1, 10000), 1000)
+
+# Measure time taken by Bubble Sort
+start_time = time.time()
+bubble_sort(random_list.copy())
+bubble_sort_time = time.time() - start_time
+
+# Measure time taken by Merge Sort
+start_time = time.time()
+merge_sort(random_list.copy())
+merge_sort_time = time.time() - start_time
+
+# Measure time taken by Quick Sort
+start_time = time.time()
+quick_sort(random_list.copy())
+quick_sort_time = time.time() - start_time
+
+print("Time taken by Bubble Sort:", bubble_sort_time)
+print("Time taken by Merge Sort:", merge_sort_time)
+print("Time taken by Quick Sort:", quick_sort_time)

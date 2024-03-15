@@ -1,0 +1,63 @@
+Demonstrate creation and use of Functions in python with all kinds of “parameters” used  with functions
+
+
+Positional Parameters:
+
+# Function with positional parameters
+def greet(name, greeting):
+    print(f"{greeting}, {name}!")
+
+# Calling the function with positional arguments
+greet("Alice", "Hello")
+
+
+
+Default Parameters:
+
+# Function with default parameters
+def greet(name, greeting="Hello"):
+    print(f"{greeting}, {name}!")
+
+# Calling the function with and without providing the default parameter
+greet("Bob")  # Output: Hello, Bob!
+greet("Charlie", "Hi")  # Output: Hi, Charlie!
+
+Variable-Length Positional Parameters (args):
+
+# Function with variable-length positional parameters
+def greet(*names):
+    for name in names:
+        print(f"Hello, {name}!")
+
+# Calling the function with multiple arguments
+greet("Alice", "Bob", "Charlie")
+
+
+
+Keyword Parameters:
+
+# Function with keyword parameters
+def greet(name, greeting):
+    print(f"{greeting}, {name}!")
+
+# Calling the function with keyword arguments
+greet(name="David", greeting="Hi")
+
+
+
+Variable-Length Keyword Parameters (kwargs):
+
+
+# Function with variable-length keyword parameters
+def greet(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+# Calling the function with multiple keyword arguments
+greet(name="Emily", greeting="Bonjour", age=30)
+
+
+
+
+
+              

@@ -1,0 +1,99 @@
+3 - Demonstrate the use of various string functions like count (), 
+    Replace () join (), upper(), lower (), capitalize ()
+
+
+
+Example Count () : Count number of occurrences of a given substring
+
+
+# define string
+string = "Python is awesome, isn't it?"
+substring = "is"
+
+count = string.count(substring)
+
+# print count
+print("The count is:", count)
+
+
+
+
+Example Using Replace():
+
+# Define a string
+original_string = "Hello, World! Hello, Python!"
+
+# Replace all occurrences of "Hello" with "Hi"
+new_string = original_string.replace("Hello", "Hi")
+
+# Print the original and modified strings
+print("Original string:", original_string)
+print("Modified string:", new_string)
+
+
+
+Example Using Join():
+
+
+# Define a list of strings
+words = ["Hello", "world", "how", "are", "you?"]
+
+# Join the strings in the list with a space delimiter
+sentence = " ".join(words)
+
+# Print the resulting sentence
+print(sentence)
+
+
+
+Example using Upper():
+
+
+# Define a string
+original_string = "hello, world!"
+
+# Convert the string to uppercase
+uppercase_string = original_string.upper()
+
+# Print the original and uppercase strings
+print("Original string:", original_string)
+print("Uppercase string:", uppercase_string)
+
+
+Example using Lower():
+
+# Define a string
+original_string = "Hello, World!"
+
+# Convert the string to lowercase
+lowercase_string = original_string.lower()
+
+# Print the original and lowercase strings
+print("Original string:", original_string)
+print("Lowercase string:", lowercase_string)
+
+
+Example Using Capitalize():
+
+
+sentence = "i am learning PYTHON."
+
+# capitalize the first character 
+capitalized_string = sentence.capitalize()
+
+# the sentence string is not modified 
+print('Before capitalize():', sentence)
+
+print('After capitalize():', capitalized_string)
+
+
+
+
+
+
+
+
+
+
+
+

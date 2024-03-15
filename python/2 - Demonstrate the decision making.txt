@@ -1,0 +1,29 @@
+2 - Demonstrate the decision making and Iterative statements in Python   
+         
+    i) “if” and its variants        ii) while and for loops.
+
+
+num = 10
+
+if num > 0:
+    print("Number is positive")
+elif num == 0:
+    print("Number is zero")
+else:
+    print("Number is negative")
+
+
+Iterative Statements with for loop:
+
+
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+
+
+Iterative Statements with while loop:
+
+count = 0
+while count < 5:
+    print("Count:", count)
+    count += 1

@@ -1,0 +1,61 @@
+Demonstrate creation and different operations on Tuple data structure in python
+
+
+write a program to Reverse the tuple:
+
+tuple1 = (10, 20, 30, 40, 50)
+tuple1 = tuple1[::-1]
+print(tuple1)
+            
+
+
+write a program to Access value 20 from the tuple:
+
+tuple1 = ("Orange", [10, 20, 30], (5, 15, 25))
+print(tuple1[1][1])
+
+
+
+write a program to Create a tuple with single item 50:
+
+tuple1= (50, )
+print(tuple1)
+
+
+
+Write a program to unpack the following tuple into four variables and display each variable.
+
+
+tuple1 = (10, 20, 30, 40)
+
+# unpack tuple into 4 variables
+a, b, c, d = tuple1
+print(a)
+print(b)
+print(c)
+print(d)
+
+
+
+write a program to Swap two tuples in Python:
+
+
+tuple1 = (11, 22)
+tuple2 = (99, 88)
+tuple1, tuple2 = tuple2, tuple1
+print(tuple2)
+print(tuple1)
+
+
+Write a program to copy elements 44 and 55 from the following tuple into a new tuple.
+
+tuple1 = (11, 22, 33, 44, 55, 66)
+tuple2 = tuple1[3:-1]
+print(tuple2)
+
+
+write a program to Sort a tuple of tuples by 2nd item:
+
+tuple1 = (('a', 23), ('b', 37), ('c', 11), ('d', 29))
+tuple1 = tuple(sorted(list(tuple1), key=lambda x: x[1]))
+print(tuple1)
